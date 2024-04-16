@@ -13,3 +13,7 @@ cuda=11.3
 2.conda install -c dglteam dgl-cuda11.3==0.9.1post1
 
 3.pip install scikit_learn
+
+run：
+cora：python trian.py --dataset=cora --alpha=10 --dc=0.06 --tree_nums=16
+citeseer: python trian.py --dataset=citeseer --alpha=10 --dc=0.05 --tree_nums=10 --n-layers=1  --patience=40
