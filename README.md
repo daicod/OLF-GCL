@@ -1,7 +1,7 @@
 # OLF-GCL
 代码整理中，稍后上传。
 
-环境：gpu3090
+环境：gpu-3090
 python=3.9.18
 pytorch=1.11.0
 cuda=11.3
@@ -16,11 +16,11 @@ cuda=11.3
 
 run：
 
-pubmed：python train.py --dataset=pubmed --alpha=10 --dc=0.05 --tree_nums=80 --n-classifier-epochs=1500 --beta=100
-
 cora：python train.py --dataset=cora --alpha=10 --dc=0.06 --tree_nums=16
 
 citeseer: python train.py --dataset=citeseer --alpha=10 --dc=0.05 --tree_nums=10 --n-layers=1  --patience=40 --wd2=0.01
+
+pubmed：python train.py --dataset=pubmed --alpha=10 --dc=0.05 --tree_nums=80 --n-classifier-epochs=1500 --beta=100
 
 photo: python train.py --dataset=photo --alpha=15 --dc=1 --tree_nums=10 --n-classifier-epochs=900
 
