@@ -8,7 +8,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from dgl import DGLGraph
 from dgl.data import register_data_args, load_data, Coauthor, AmazonCoBuy
-# from dgl.transform import add_self_loop, remove_self_loop
 from dgl import add_self_loop, remove_self_loop
 
 from model import OLF_GCL, Classifier, leadt
@@ -33,7 +32,6 @@ def evaluate(model, features, labels, mask):
         return correct.item() * 1.0 / len(labels)
     
 def main(args):
-
 
     setup_seed(35536)
     g, features, labels, n_classes, train_mask, val_mask, test_mask = load(args.dataset)
