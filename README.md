@@ -15,6 +15,13 @@ cuda=11.3
 3.pip install scikit_learn
 
 run：
-cora：python trian.py --dataset=cora --alpha=10 --dc=0.06 --tree_nums=16
 
-citeseer: python trian.py --dataset=citeseer --alpha=10 --dc=0.05 --tree_nums=10 --n-layers=1  --patience=40 --wd2=0.01
+pubmed：python train.py --dataset=pubmed --alpha=10 --dc=0.05 --tree_nums=80 --n-classifier-epochs=1500 --beta=100
+
+cora：python train.py --dataset=cora --alpha=10 --dc=0.06 --tree_nums=16
+
+citeseer: python train.py --dataset=citeseer --alpha=10 --dc=0.05 --tree_nums=10 --n-layers=1  --patience=40 --wd2=0.01
+
+photo: python train.py --dataset=photo --alpha=15 --dc=1 --tree_nums=10 --n-classifier-epochs=900
+
+computer: python train.py --dataset=comp --alpha=15 --dc=1 --tree_nums=10 --n-classifier-epochs=2000
