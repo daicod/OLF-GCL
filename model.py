@@ -1,8 +1,3 @@
-"""
-Graph InfoClust in DGL
-Implementation is based on https://github.com/dmlc/dgl/tree/master/examples/pytorch/dgi
-"""
-
 import torch
 import torch.nn as nn
 import math
