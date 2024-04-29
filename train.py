@@ -99,7 +99,6 @@ def main(args):
             dur.append(time.time() - t0)
         print("Epoch:", epoch, "loss:", loss.item())
         # logger.info(f"Epoch: {epoch}, loss: {loss.item()}")
-        # gic.eval()
 
     # train classifier
     #print('Loading {}th epoch'.format(best_t))
@@ -173,12 +172,6 @@ if __name__ == '__main__':
     parser.add_argument('--tree_nums', type=int, default=16, help='')
     # parser.add_argument('--d', dest='dataset', type=str, default='cora', help='')
 
-    # seed(35536) 无验证集
-    # dataset:cora, n-hidden:512, wd2:0., patience:50, alpha:10, dc:0.06, tree_nums:16 c_epochs:500 best84.7
-    # dataset:citeseer, n-hidden:512, wd2:0.01, patience:40, alpha:10, dc:0.05, tree_nums:10 c_epochs:500 norm:false, n-layers:1, best73.7
-    # dataset:pubmed, n-hidden:512, wd2:0., patience:50, alpha:10, dc:0.05, tree_nums:80 c_epochs:1500 beta:100 best81.0
-    # dataset:photo, n-hidden:512, wd2:0., patience:50, alpha:15, dc:1, tree_nums:10 c_epochs:900 best93.0
-    # dataset:comp, n-hidden:512, wd2:0., patience:50, alpha:15, dc:1, tree_nums:10 c_epochs:2000 best89.0
 
     parser.set_defaults(self_loop=False)
     args = parser.parse_args()
