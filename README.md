@@ -15,7 +15,6 @@ cuda=11.3
 
 run：
 
-cora：python train.py --dataset=cora --alpha=10 --dc=0.06 --tree_nums=16
 
 citeseer: python train.py --dataset=citeseer --alpha=10 --dc=0.05 --tree_nums=10 --n-layers=1  --patience=40 --wd2=0.01
 
